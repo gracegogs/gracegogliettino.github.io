@@ -1647,3 +1647,74 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+
+#wrapper {
+	display: flex;
+	min-height: 100vh;
+}
+
+#sidebar {
+	width: 300px;
+	padding: 3em 2em;
+	background: rgba(0,0,0,0.45);
+	position: fixed;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+
+#content {
+	margin-left: 300px;
+	padding: 4em;
+	max-width: 900px;
+}
+
+.headshot {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 1em;
+}
+
+#sidebar nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+#sidebar nav li {
+	margin: 1em 0;
+}
+
+#sidebar nav a {
+	text-decoration: none;
+}
+
+section {
+	margin-bottom: 4em;
+}
+
+.project {
+	margin-bottom: 2em;
+}
+
+
+@media screen and (max-width: 900px) {
+
+	#wrapper {
+		display: block;
+	}
+
+	#sidebar {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	#content {
+		margin-left: 0;
+		padding: 2em;
+	}
+
+}
